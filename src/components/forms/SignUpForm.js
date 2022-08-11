@@ -1,5 +1,5 @@
 import { useState } from "react";
-import FormInput from "../form-input/FormInput";
+import FormInput from "./FormInput";
 import './SignUpForm.scss'
 
 import { createAuthUserWithEmailAndPassword, createUserDocFromAuth } from "../../utils/firebase/firebase.utils";
@@ -43,7 +43,7 @@ const SignUpForm = () => {
 
   return (
     <div className='sign-up-container'>
-      <h2>No Account Yet?</h2>
+      <h2>No account yet?</h2>
       <span>Sign up with your email</span>
       <form onSubmit={handleSubmit}>
         <FormInput
@@ -54,7 +54,7 @@ const SignUpForm = () => {
           value={displayName}
         />
         <FormInput
-          label='Display Name'
+          label='Email'
           type='email'
           required
           onChange={handleChange}
