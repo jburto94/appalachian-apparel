@@ -1,4 +1,4 @@
-.category-container {
+.category-box-container {
   min-width: 30%;
   height: 240px;
   flex: 1 1 auto;
@@ -63,6 +63,7 @@
     p {
       font-weight: lighter;
       font-size: 16px;
+      color: black;
     }
   }
 }

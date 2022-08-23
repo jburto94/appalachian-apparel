@@ -1,4 +1,4 @@
-import CategoryList from '../../components/categories/CategoryList';
+import CategoryList from '../../components/categories/category-list/CategoryList';
 
 const Home = () => {
   const categories = [
@@ -9,7 +9,7 @@ const Home = () => {
     },
     {
       "id": 2,
-      "title": "Shoes",
+      "title": "Sneakers",
       "imageUrl": "https://i.ibb.co/0jqHpnp/sneakers.png"
     },
     {
