@@ -9,15 +9,6 @@ font-size: 12px;
 color: ${mainColor};
 `;
 
-export const InputGroup = styled.div`
-  position: relative;
-  margin: 45px 0;
-
-  input[type='password'] {
-    letter-spacing: 0.3em;
-  }
-`;
-
 export const FormInputLabel = styled.label`
   color: ${subColor};
   font-size: 16px;
@@ -28,7 +19,7 @@ export const FormInputLabel = styled.label`
   top: 10px;
   transition: 300ms ease all;
 
-  ${({shrink}) => shrink && shrinkLabel}
+  ${({shrink}) => shrink && shrinkLabel};
 `;
 
 export const Input = styled.input`
@@ -49,6 +40,15 @@ export const Input = styled.input`
   }
 
   &:focus ~ ${FormInputLabel} {
-    ${({shrink}) => shrink && shrinkLabel}
+    ${shrinkLabel};
+  }
+`;
+
+export const InputGroup = styled.div`
+  position: relative;
+  margin: 45px 0;
+
+  input[type='password'] {
+    letter-spacing: 0.3em;
   }
 `;

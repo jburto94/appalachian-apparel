@@ -1,15 +1,17 @@
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { CategoryBoxContainer, BackgroundImage, CategoryBody, CategoryTitle, CategoryText} from './CategoryBox.jsx';
 
 const CategoryBox = ({title, imageUrl}) => {
+  const navigate = useNavigate();
+
+  const navigateHandler = () => navigate(`/shop/${title.toLowerCase()}`);
+  
   return (
-    <CategoryBoxContainer>
+    <CategoryBoxContainer onClick={navigateHandler}>
       <BackgroundImage style={{backgroundImage: `url(${imageUrl})`}}/>
         <CategoryBody>
           <CategoryTitle>{title}</CategoryTitle>
-          <Link to={`/shop/${title.toLowerCase()}`}>
-            <CategoryText>Shop Now</CategoryText>
-          </Link>
+          <CategoryText>Shop Now</CategoryText>
         </CategoryBody>
     </CategoryBoxContainer>
   );
