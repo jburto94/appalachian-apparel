@@ -1,9 +1,9 @@
 import { useState } from "react";
-import FormInput from "./FormInput";
-import './SignUpForm.scss'
+import FormInput from "../form-input/FormInput";
+import { SignUpContainer, SignUpHeader } from './SignUpForm.jsx'
 
-import { createAuthUserWithEmailAndPassword, createUserDocFromAuth } from "../../utils/firebase/firebase.utils";
-import Button from "../button/Button";
+import { createAuthUserWithEmailAndPassword, createUserDocFromAuth } from "../../../utils/firebase/firebase.utils";
+import Button from "../../button/Button";
 
 const defaultFormFields = {
   displayName: '',
@@ -43,8 +43,8 @@ const SignUpForm = () => {
   };
 
   return (
-    <div className='sign-up-container'>
-      <h2>No account yet?</h2>
+    <SignUpContainer>
+      <SignUpHeader>No account yet?</SignUpHeader>
       <span>Sign up with your email</span>
       <form onSubmit={handleSubmit}>
         <FormInput
@@ -80,7 +80,7 @@ const SignUpForm = () => {
         />
         <Button type='submit'>Sign Up</Button>
       </form>
-    </div>
+    </SignUpContainer>
   );
 };
 

@@ -1,14 +1,10 @@
-$medium-smaller: 768px;
+import styled from 'styled-components';
 
-.authentication-container {
+export const AuthenticationContainer = styled.div`
   display: flex;
   justify-content: space-between;
   width: 900px;
   max-width: 100%;
   margin: 30px auto;
   flex-wrap: wrap;
-
-  div {
-    margin-bottom: 40px;
-  }
-}
+`;

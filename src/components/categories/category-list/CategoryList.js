@@ -1,13 +1,13 @@
 import CategoryBox from "../category-box/CategoryBox"
-import './CategoryList.scss';
+import { CategoryListContainer } from './CategoryList.jsx';
 
 const CategoryList = ({categories}) => {
   return (
-    <div className='category-list-container'>
+    <CategoryListContainer>
       {categories.map(({title, id, imageUrl}) => (
         <CategoryBox key={id} title={title} imageUrl={imageUrl} />
       ))}
-    </div>
+    </CategoryListContainer>
   );
 };
 
