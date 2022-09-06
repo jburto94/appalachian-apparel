@@ -5,7 +5,7 @@ const CategoryBox = ({title, imageUrl}) => {
   const navigate = useNavigate();
 
   const navigateHandler = () => navigate(`/shop/${title.toLowerCase()}`);
-  
+
   return (
     <CategoryBoxContainer onClick={navigateHandler}>
       <BackgroundImage style={{backgroundImage: `url(${imageUrl})`}}/>
