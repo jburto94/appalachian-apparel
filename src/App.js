@@ -5,17 +5,20 @@ import Shop from './components/routes/shop/Shop';
 import Authentication from './components/routes/authentication/Authentication';
 import Checkout from './components/routes/checkout/Checkout';
 import Navigation from './components/partials/Navigation';
+import Footer from './components/partials/Footer';
 
 const App = () => {
   return (
+    <div className='App'>
+    <Navigation />
       <Routes>
-        <Route path='/' element={<Navigation />}>
           <Route index element={<Home />} />
           <Route path='shop/*' element={<Shop />} />
           <Route path='auth' element={<Authentication />} />
           <Route path='checkout' element={<Checkout />} />
-        </Route>
       </Routes>
+    <Footer />
+    </div>
   );
 };
 

@@ -17,6 +17,7 @@ export const DefaultButton = styled.button`
   cursor: pointer;
   display: flex;
   justify-content: center;
+  margin-bottom: 15px;
 
   &:hover {
     background-color: white;

@@ -3,7 +3,7 @@ import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
 import Button from '../../button/Button';
 import { UserContext } from '../../../context/UserContext';
 
-import { PaymentFormContainer, FormContainer } from './PaymentForm.jsx';
+import { PaymentFormContainer, FormContainer, CardElementContainer } from './PaymentForm.jsx';
 
 const PaymentForm = ({ total }) => {
   const stripe = useStripe();
@@ -54,7 +54,7 @@ const PaymentForm = ({ total }) => {
     <PaymentFormContainer>
       <FormContainer onSubmit={handleSubmit}>
         <h2>Credit Card Payment</h2>
-        <CardElement />
+        <CardElementContainer />
         <Button disabled={processingPayment} buttonType='inverted'>Pay now</Button>
       </FormContainer>
     </PaymentFormContainer>

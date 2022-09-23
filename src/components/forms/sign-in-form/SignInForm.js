@@ -27,7 +27,6 @@ const SignInForm = () => {
       if (e.code === 'auth/wrong-password' || e.code === 'auth/user-not-found') {
         alert('incorrect email/password');
       }
-      console.log(e);
     }
   };
 

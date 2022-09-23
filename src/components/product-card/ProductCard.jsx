@@ -20,9 +20,9 @@ export const ProductCardContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  height: 500px;
   align-items: center;
   position: relative;
+  margin-bottom: 35px;
 
   &:hover ${Image} {
     opacity: 0.8;
@@ -36,7 +36,7 @@ export const ProductCardContainer = styled.div`
 
 export const ProductInfo = styled.div`
   width: 100%;
-  height: 5%;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
   font-size: 18px;

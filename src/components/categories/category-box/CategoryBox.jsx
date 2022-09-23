@@ -18,6 +18,10 @@ export const CategoryBody = styled.div`
   background-color: white;
   opacity: 0.7;
   position: absolute;
+
+  @media (max-width:500px) {
+    padding: 0 15px;
+  }
 `;
 
 export const CategoryBoxContainer = styled.div`
@@ -55,15 +59,21 @@ export const CategoryBoxContainer = styled.div`
 
 export const CategoryTitle = styled.h2`
   font-weight: bold;
-  margin: 0 6px 0;
+  margin: 6px 0 0 0;
   font-size: 22px;
   color: #4a4a4a;
+  @media (max-width: 500px) {
+    font-size: 18px;
+  }
 `;
 
 export const CategoryText = styled.p`
   font-weight: lighter;
   font-size: 16px;
   color: black;
+  @media (max-width: 500px) {
+    font-size: 14px;
+  }
 `;
 
 // .category-box-container {

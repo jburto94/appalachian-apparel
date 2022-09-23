@@ -14,4 +14,6 @@ export const SignInHeader = styled.h2`
 export const ButtonsContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
 `;

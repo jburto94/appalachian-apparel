@@ -23,6 +23,14 @@ export const Image = styled.img`
 
 export const ItemInfo = styled.span`
   width: 23%;
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 14px;
+  }
 `;
 
 export const Quantity = styled(ItemInfo)`
@@ -42,6 +50,5 @@ export const Value = styled.span`
 `;
 
 export const RemoveButton = styled.div`
-  padding-left: 12px;
   cursor: pointer;
 `;
