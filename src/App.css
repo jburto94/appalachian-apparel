@@ -4,3 +4,7 @@
   position: relative;
   box-sizing: border-box;
 }
+
+.app-body {
+  padding: 15px;
+}

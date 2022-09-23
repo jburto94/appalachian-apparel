@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const FooterContainer = styled.div`
-  padding: 15px 25px;
+  padding: 15px;
   width: 100%;
   display: flex;
   justify-content: space-between;
