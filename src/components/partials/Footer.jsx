@@ -5,7 +5,6 @@ export const FooterContainer = styled.div`
   padding: 15px 25px;
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   background-color: black;
@@ -31,10 +30,6 @@ export const NavLinks = styled.div`
   align-items: center;
   text-align: right;
   justify-content: flex-end;
-  @media (max-width: 500px) {
-    width: 100%;
-    justify-content: flex-start;
-  }
 `;
 
 export const NavLink = styled(Link)`

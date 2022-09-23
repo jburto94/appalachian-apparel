@@ -7,6 +7,8 @@ import Checkout from './components/routes/checkout/Checkout';
 import Navigation from './components/partials/Navigation';
 import Footer from './components/partials/Footer';
 
+import './App.css';
+
 const App = () => {
   return (
     <div className='App'>

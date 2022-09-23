@@ -1,5 +1,6 @@
 .App {
-  padding-bottom: 120px;
+  min-height: 100vh;
+  padding-bottom: 160px;
   position: relative;
   box-sizing: border-box;
 }
